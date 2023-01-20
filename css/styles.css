@@ -1,0 +1,35 @@
+/* Variables globales personalizadas para curso math*/
+:root{
+    /* Colores pinsa */
+    --pinsa-primary--color: #7648E0;
+
+}
+/******************** ESTILOS GENERALES ********************/
+/* Tamaño correcto de los svg/iconos */
+.svg-size-xxx{
+    width: 12.5em;
+}
+.svg-size-xxl{
+    width: 7.5em;
+}
+.svg-size-xl{
+    width: 5em;
+}
+.svg-size-lg{
+    width: 2.5em;
+}
+.svg-size-m{
+    width: 2em;
+}
+.svg-size-s{
+    width: 1.5em;
+}
+/******************** ESTILOS DE PINSA ********************/
+/* Colores de fondo */
+.bg-pinsa-primary {
+    background-color: var(--pinsa-primary--color)
+}
+/* Colores de texto */
+.text-pinsa-primary {
+    color: var(--pinsa-primary--color)
+}

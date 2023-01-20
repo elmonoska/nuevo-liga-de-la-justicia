@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audios | Nueva Liga De La Justicia | Publicaciones Interactivas</title>
+  <!-- Css de bootstrap 5.2.3-->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- Css personalizado -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Icono de pagina -->
+  <link rel="shortcut icon" href="./img/pinsa/logo-pinsa-transparent.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="./index.html">
+          <img src="./img/ligaDeLaJusticia/logo.png" alt="Logo liga de la justicia" width="100" height="50"
+            class="d-inline-block">
+          LIGA DE LA JUSTICIA
+        </a>
+        <button class="navbar-toggler bg-danger bg-gradient bg-opacity-75" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" aria-current="page" href="./audios.html">Mission (Audios)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./videos.html">Season One (Videos)</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin de barra de navegacion -->
+    <!-- Banner -->
+    <section class="banner p-0 container-fluid mb-2 d-flex flex-column align-items-center justify-content-center">
+      <img class="w-100 mt-5" src="./img/ligaDeLaJusticia/banner.jpg" alt="Banner liga de la justicia">
+      <img class="img-fluid" src="./img/ligaDeLaJusticia/nameLogo.png" alt="Logo banner liga de la justicia">
+    </section>
+    <!-- Fin de banner -->
+  </header>
+
+  <!-- Contenedor principal -->
+  <section class="container mx-auto mb-4">
+
+      <!-- Contenido principal -->
+      <article class="container-fluid border p-3 rounded shadow">
+          <p class="fs-2 text-center">
+            <strong>Audios Mission.</strong>
+          </p>
+          <hr>
+          <p class="fs-5 text-uppercase text-danger">
+            <strong>complementa tu aprendizaje</strong>
+          </p>
+          <p>
+            <strong>Los CD's Mission son los audios que comprenden cada una de las pistas en el libro de Grammar.</strong>
+          </p>
+          <p>Los tracks ofrecen una pronunciación ágil y dinámica, tal cual se habla el idioma en situaciones cotidianas.</p>
+          <p>Ambos Missions (1 & 2) pueden ser descargados a cualquier dispositivo para su reproducción y para que la persona que trabajara el curso esté en constante contacto con la pronunciación.</p>
+
+          <hr>
+
+          <article class="container text-center">
+            <!-- Seleccion de cd -->
+            <p class="fs-5">
+              <strong>Elije el Mission que deseas trabajar.</strong>
+            </p>
+            <select onchange="change()" name="missionSelect" id="missionSelect" class="form-select mx-auto my-3 p-3 shadow"
+              aria-label="Default select example">
+              <option disabled selected>Seleccione un Mission.</option>
+              <option value="MISSION 1">Mission 1</option>
+              <option value="MISSION 2">Mission 2</option>
+            </select>
+            <!-- Fin de seleccion de cd -->
+            <!-- Seleccion de track -->
+            <p class="fs-5 text-center">
+              <strong>Elije la pista que deseas escuchar.</strong>
+            </p>
+            <select onchange="change()" name=pistaSelect id="pistaSelect" class="form-select mx-auto my-3 p-3 shadow"
+              aria-label="Default select example">
+              <option disabled selected>Seleccione un track de audio</option>
+              <!-- option[value="$ Pista $.mp3"]{Track $}*78 -->
+              <option value="01 Pista 1.mp3">Track 1</option>
+              <option value="02 Pista 2.mp3">Track 2</option>
+              <option value="03 Pista 3.mp3">Track 3</option>
+              <option value="04 Pista 4.mp3">Track 4</option>
+              <option value="05 Pista 5.mp3">Track 5</option>
+              <option value="06 Pista 6.mp3">Track 6</option>
+              <option value="07 Pista 7.mp3">Track 7</option>
+              <option value="08 Pista 8.mp3">Track 8</option>
+              <option value="09 Pista 9.mp3">Track 9</option>
+              <option value="10 Pista 10.mp3">Track 10</option>
+              <option value="11 Pista 11.mp3">Track 11</option>
+              <option value="12 Pista 12.mp3">Track 12</option>
+              <option value="13 Pista 13.mp3">Track 13</option>
+              <option value="14 Pista 14.mp3">Track 14</option>
+              <option value="15 Pista 15.mp3">Track 15</option>
+              <option value="16 Pista 16.mp3">Track 16</option>
+              <option value="17 Pista 17.mp3">Track 17</option>
+              <option value="18 Pista 18.mp3">Track 18</option>
+              <option value="19 Pista 19.mp3">Track 19</option>
+              <option value="20 Pista 20.mp3">Track 20</option>
+              <option value="21 Pista 21.mp3">Track 21</option>
+              <option value="22 Pista 22.mp3">Track 22</option>
+              <option value="23 Pista 23.mp3">Track 23</option>
+              <option value="24 Pista 24.mp3">Track 24</option>
+              <option value="25 Pista 25.mp3">Track 25</option>
+              <option value="26 Pista 26.mp3">Track 26</option>
+              <option value="27 Pista 27.mp3">Track 27</option>
+              <option value="28 Pista 28.mp3">Track 28</option>
+              <option value="29 Pista 29.mp3">Track 29</option>
+              <option value="30 Pista 30.mp3">Track 30</option>
+              <option value="31 Pista 31.mp3">Track 31</option>
+              <option value="32 Pista 32.mp3">Track 32</option>
+              <option value="33 Pista 33.mp3">Track 33</option>
+              <option value="34 Pista 34.mp3">Track 34</option>
+              <option value="35 Pista 35.mp3">Track 35</option>
+              <option value="36 Pista 36.mp3">Track 36</option>
+              <option value="37 Pista 37.mp3">Track 37</option>
+              <option value="38 Pista 38.mp3">Track 38</option>
+              <option value="39 Pista 39.mp3">Track 39</option>
+              <option value="40 Pista 40.mp3">Track 40</option>
+              <option value="41 Pista 41.mp3">Track 41</option>
+              <option value="42 Pista 42.mp3">Track 42</option>
+              <option value="43 Pista 43.mp3">Track 43</option>
+              <option value="44 Pista 44.mp3">Track 44</option>
+              <option value="45 Pista 45.mp3">Track 45</option>
+              <option value="46 Pista 46.mp3">Track 46</option>
+              <option value="47 Pista 47.mp3">Track 47</option>
+              <option value="48 Pista 48.mp3">Track 48</option>
+              <option value="49 Pista 49.mp3">Track 49</option>
+              <option value="50 Pista 50.mp3">Track 50</option>
+              <option value="51 Pista 51.mp3">Track 51</option>
+              <option value="52 Pista 52.mp3">Track 52</option>
+              <option value="53 Pista 53.mp3">Track 53</option>
+              <option value="54 Pista 54.mp3">Track 54</option>
+              <option value="55 Pista 55.mp3">Track 55</option>
+              <option value="56 Pista 56.mp3">Track 56</option>
+              <option value="57 Pista 57.mp3">Track 57</option>
+              <option value="58 Pista 58.mp3">Track 58</option>
+              <option value="59 Pista 59.mp3">Track 59</option>
+              <option value="60 Pista 60.mp3">Track 60</option>
+              <option value="61 Pista 61.mp3">Track 61</option>
+              <option value="62 Pista 62.mp3">Track 62</option>
+              <option value="63 Pista 63.mp3">Track 63</option>
+              <option value="64 Pista 64.mp3">Track 64</option>
+              <option value="65 Pista 65.mp3">Track 65</option>
+              <option value="66 Pista 66.mp3">Track 66</option>
+              <option value="67 Pista 67.mp3">Track 67</option>
+              <option value="68 Pista 68.mp3">Track 68</option>
+              <option value="69 Pista 69.mp3">Track 69</option>
+              <option value="70 Pista 70.mp3">Track 70</option>
+              <option value="71 Pista 71.mp3">Track 71</option>
+              <option value="72 Pista 72.mp3">Track 72</option>
+              <option value="73 Pista 73.mp3">Track 73</option>
+              <option value="74 Pista 74.mp3">Track 74</option>
+              <option value="75 Pista 75.mp3">Track 75</option>
+              <option value="76 Pista 76.mp3">Track 76</option>
+              <option value="77 Pista 77.mp3">Track 77</option>
+              <option value="78 Pista 78.mp3">Track 78</option>
+            </select>
+            <!-- Fin de seleccion de track -->
+          </article>
+          <!-- Reproductor de audio -->
+          <article class="container d-flex flex-wrap flex-column mt-3 mb-4">
+            <p class="fs-5 text-center">
+              <strong id="audioTitle">Estas escuchando...</strong>
+            </p>
+            <audio id="pistaListen" class="mt-3 mx-auto w-75 mb-4 rounded shadow" controls controlslist="nodownload"
+              src="./multi/CDS/MISSION (AUDIO)/MISSION 1/01 Pista 1.mp3">
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </article>
+          <!-- Fin de reproductor de audio -->
+      </article>
+      <!-- Fin de contenido principal -->
+  </section>
+  <!-- Fin de contenedor principal -->
+  <!-- Pie de pagina -->
+  <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
+    <p class="my-auto text-white">
+      <img class="svg-size-m" src="./img/iconos/question-white.svg" alt="Icono question white">
+      <a class="link link-light" href="">
+        <em>Dudas o sugerencias</em>
+      </a>
+    </p>
+    <picture class="text-center">
+      <img class="img-fluid shadow w-50" src="./img/pinsa/logo-pinsa-transparent.png" alt="Logo pinsa transparente">
+    </picture>
+  </footer>
+  <!-- Fin de pie de pagina -->
+</body>
+<script>
+  //Alternate audio
+  const missionSelect = document.querySelector("#missionSelect")
+  const pistaSelect = document.querySelector("#pistaSelect")
+  const audioTitle = document.querySelector("#audioTitle")
+  const pistaListen = document.querySelector("#pistaListen")
+
+  //function que cambia el track mientras se modifique algun select que se desea ver
+  function change() {
+    //Obtiene el valor de la cd seleccionado
+    const selectedOptionMission = missionSelect.options[missionSelect.selectedIndex];
+    //Obtiene el valor del track seleccionado
+    const selectedOptionAudio = pistaSelect.options[pistaSelect.selectedIndex];
+    pistaListen.setAttribute('src', `multi/CDS/MISSION (AUDIO)/${selectedOptionMission.value}/${selectedOptionAudio.value}`)
+    audioTitle.textContent = `Estas escuchando el ${selectedOptionMission.value} - ${selectedOptionAudio.text}`
+  }
+</script>
+<!-- Bootstrap 5.2.3 -->
+<script src="./js/bootstrap.js"></script>
+<!-- Popper js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+</html>
