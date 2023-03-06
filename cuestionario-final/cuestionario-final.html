@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam | The Ultimate English Course</title>
+    <!-- Css bootstrap 5.2.3 -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Personal styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="bg-dark text-math-black">
+      <!-- Header -->
+  <header class="sticky-top">
+  </header>
+  <!-- Fin de header -->
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <!-- Cuestionario -->
+        <section class="container-fluid bg-white border rounded d-flex flex-column py-4 px-5" id="cuestionario">
+            <h1 class="text-center text-capitalize display-3">cuestionario final de liga de la justicia.</h1>
+            <hr>
+            <picture class="d-flex justify-content-center my-3">
+                <img id="imgPregunta" class="img-fluid  w-75" src="../img/cuestionario/portada.jpg" alt="portada">
+            </picture>
+            <h3 class="text-capitalize text-center my-3" id="pregunta">
+                <!-- Generacion de pregunta automatica -->
+            </h3>
+            <article id="instrucciones" class="mx-auto d-flex flex-column justify-content-center align-items-center">
+                <p class="display-1 text-success"><strong>¡Felicidades!</strong></p>
+                <p><strong>The Ultimate English Course. Learn English with the World’s Greatest Super Heroes.</strong></p>
+                <p>Ahora que ya sabes inglés, falta un último paso para que obtengas tu preciado diploma con valor curricular.</p>
+                <p>Solo tienes que realizar el examen final, seleccionando la respuestas correctas. Si has contestado correctamente al menos el 80%  de las preguntas, se te mostrara un formulario para que lo llenes con tus datos  y te haremos llegar tu diploma hasta la puerta de tu hogar.</p>
+                <p class="text-center display-4"><strong>¡Buena suerte! 🙂</strong></p>
+                <button id="empezar" 
+                class="btn btn-info text-white fs-1 border border-opacity-75 border-dark w-75 mx-auto rounded p-2 shadow floating">
+                ¡COMENZAR!</button>
+            </article>
+
+
+            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2" id="opciones">
+                <!-- Se generan en automatico las opciones con botones js -->
+            </article>
+            
+            <p class="text-center text-dark fs-5" id="progreso">
+
+            </p>
+
+        </section>
+        <!-- Fin de  Cuestionario -->
+
+    </main>
+    <!-- Fin de contenido principal -->
+    <!-- Pie de pagina -->
+    <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
+        <picture class="text-center">
+            <img class="img-fluid shadow w-50" src="../../img/pinsa/logo-pinsa-transparent.png"
+                alt="Logo pinsa transparente">
+        </picture>
+    </footer>
+    <!-- Fin de pie de pagina -->
+
+</body>
+<!-- numeros-naturales-cuestionario.js -->
+<script type="module" src="./js/cuestionario-final.js"></script>
+
+<!-- Bootstrap 5.2.3 -->
+<script src="../js/bootstrap.js"></script>
+<!-- Popper js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+</html>
+
+</html>
