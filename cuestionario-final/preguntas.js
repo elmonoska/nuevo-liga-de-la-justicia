@@ -16,7 +16,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option.  I  _ _  English sutend.',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option:  I  _ _  English student.',
         opciones: [
             'am, a',
             'am, an',
@@ -27,7 +27,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. She _ _ Super Hero fan.',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: She _ _ Super Hero fan.',
         opciones: [
             'am, a',
             'am, an',
@@ -38,7 +38,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. _ you happy?',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: _ you happy?',
         opciones: [
             'Are',
             'Am',
@@ -48,7 +48,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. Green Lantern _ not a villain',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: Green Lantern _ not a villain',
         opciones: [
             'am',
             'are',
@@ -58,7 +58,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. My father and I _ football fans"',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: My father and I _ football fans"',
         opciones: [
             'am',
             'are',
@@ -68,7 +68,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. _ Wonder Woman _ Amazon princess?',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: _ Wonder Woman _ Amazon princess?',
         opciones: [
             'is, a',
             'is, an',
@@ -79,7 +79,7 @@ export const examenFinal = [
         img: '',
     },
     {
-        pregunta: 'Verb to be - Articles. Read and complete with the correct option. Today _ _ fantastic day!',
+        pregunta: 'Verb to be - Articles. Read and complete with the correct option: Today _ _ fantastic day!',
         opciones: [
             'is, a',
             'is, an',

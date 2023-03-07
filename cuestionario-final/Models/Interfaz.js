@@ -44,14 +44,14 @@ export class Interfaz {
      * @param {number} calificacion es el puntaje final del cuestionario
      */
     muestraCalificacion(calificacion){
-        if(calificacion < 50){
+        if(calificacion < 80){
             const cuestionarioFinalizadoHTML = `
             <h1 class="text-center display-1">Has finalizado el cuestionario.</h1>
             <hr>
-            <p class="text-center display-1  text-danger"><strong>Lo lamento ☹️</strong></p>
+            <p class="text-center display-1 text-danger"><strong>¡Mala suerte! ☹️</strong></p>
             
             <h2 class="text-center">Tu calificacion final es de: <strong class="text-danger  display-3">${calificacion}%</strong></h2>
-            <p>Al parecer aun no cumples con la calificacion minima. No te desanimes, tomate unos minutos y vuelve a intentarlo.</p>
+            <p>Al parecer aun no cumples con la calificacion minima. No te desanimes, tomate unos minutos y vuelve a intentarlo. <strong>Puedes intentarlo las veces que necesites</strong>.</p>
             <a href="javascript:location.reload()"
               class="btn btn-primary text-white text-uppercase fs-3 p-3 mb-2 w-75 mx-auto">volver a intentar</a>
             `
@@ -61,76 +61,74 @@ export class Interfaz {
             const cuestionarioFinalizadoHTML = `
             <h1 class="text-center display-1">Has finalizado el cuestionario.</h1>
             <hr>
-            <p class="text-center display-1  text-success"><strong>Felicidades 🥳</strong></p>
-            <h2 class="text-center">Tu calificacion final es de: <strong class="text-danger  display-3">${calificacion}%</strong></h2>
-            <p>Podemos notar que este curso ha rendido frutos. Con esto finalizamos esta prueba y ahora solo tendras que llenar tus datos de contacto.</p>
-            <p>Cuando termines de llegar tus datos, solo da clic en el boton <strong>Enviar datos </strong> y cuando recibamos la informacion nos pondremos en contacto contigo. </p>
-            <p><strong class="text-danger">Te recomendamos tambien tomar una captura de pantalla de esto en caso de que suceda algun problema</strong></p>
+            <p class="text-center display-1  text-success"><strong>¡Felicidades! 🥳</strong></p>
+            <h2 class="text-center">Tu calificacion final es de: <strong class="text-success display-3">${calificacion}%</strong></h2>
+            <p>Podemos notar que este curso ha rendido frutos. Con esto finalizamos esta prueba y ahora <strong>solo tendras que llenar el siguiente formulario con tus datos de contacto</strong>.</p>
+            <p>Cuando termines, solo da clic en el boton <strong>Enviar datos </strong> y cuando recibamos la informacion nos pondremos en contacto contigo lo mas pronto posible.</p>
+            <p><strong class="text-danger">Te recomendamos tambien tomar una captura de pantalla de esto como evidencia, en caso de que suceda algun error.</strong></p>
             
             <form action="https://formsubmit.co/soportetecnicopublicacionesint@gmail.com" 
-            method="POST" class="border py-5 px-3 row row-cols-1 gap-2">
+            method="POST" class="border py-5 px-3 d-flex flex-column justify-content-around gap-2">
                 <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_cc" value="another@email.com">
                 <input type="hidden" name="_next" value="https://www.google.com.mx">
                 <input type="hidden" name="_subject" value="Examen Final Liga de La Justicia ¡Aprobado!">
 
 
 
-                <p class="text-center">Datos de contrato</p>
+                <p class="text-center display-5 text-primary"><strong>Datos de contrato</strong>.</p>
                 <label class="col form-label">Folio:</label>
-                <input class="col form-control" type="number" name="folio" required placeholder="Escribe aqui tu folio o referncia">
+                <input class="col form-control" type="tel" name="folio" required placeholder="Escribe aqui tu folio o referencia" pattern="[0-9]{7}" title="Tu numero de folio empieza con 3 o 4 y solo esta compuesto por 7 digitos">
                 
-                <label class="col form-label">Nombre del titular del contrato:</label>
-                <input class="col form-control" type="text" name="nombreTitular" required placeholder="Escribe aqui el nombre">
+                <label class="col form-label">Nombre completo del titular del contrato:</label>
+                <input class="col form-control" type="text" name="nombreTitular" required placeholder="Escribe aqui el nombre completo" pattern="[A-Za-z]{1,50}" title="El nombre solo debe tener letras">
                 
-                <label class="col form-label">Nombre del estudiante:</label>
-                <input class="col form-control" type="text" name="nombreEstudiante" required placeholder="Escribe aqui tu nombre">
+                <label class="col form-label">Nombre completo del estudiante:</label>
+                <input class="col form-control" type="text" name="nombreEstudiante" required placeholder="Escribe aqui tu nombre completo" pattern="[A-Za-z]{1,50}" title="El nombre solo debe tener letras">
                 
                 <label class="col form-label">Edad:</label>
-                <input class="col form-control" type="number" name="edad" required placeholder="Escribe aqui tu edad">
+                <input class="col form-control" type="tel" name="edad" required placeholder="Escribe aqui tu edad" pattern="[0-9]{2}" title="La edad solo puede tener numeros">
 
                 <label class="col form-label">Correo electronico:</label>
-                <input class="col form-control" type="email" name="email" required placeholder="Escribe aqui tu correo">
+                <input class="col form-control" type="email" name="email" required placeholder="Escribe aqui tu correo" title="Verifica bien tu correo">
                 
 
                 <hr>
-                <p class="text-center">Domicilio donde quieres recibir tu diploma</p>
+                <p class="text-center display-5 text-primary"><strong>Domicilio donde quieres recibir tu diploma</strong>.</p>
                 <label class="col form-label">Calle:</label>
-                <input class="col form-control" type="text" name="calle" required placeholder="Escribe aqui tu calle">
+                <input class="col form-control" type="text" name="calle" required placeholder="Escribe aqui tu calle" pattern="[A-Za-z0-9]{1,40}">
                 
                 <label class="col form-label">Numero de Exterior:</label>
-                <input class="col form-control" type="text" name="numeroExterior" required placeholder="Escribe aqui tu numero de exterior">
+                <input class="col form-control" type="text" name="numeroExterior" required placeholder="Escribe aqui tu numero de exterior" pattern="[A-Za-z0-9]{1,20}">
                 
                 <label class="col form-label">Numero de interior:</label>
-                <input class="col form-control" type="text" name="numeroInterior" required placeholder="Escribe aqui tu numero de interior">
+                <input class="col form-control" type="text" name="numeroInterior" placeholder="Escribe aqui tu numero de interior" pattern="[A-Za-z0-9]{1,20}">
                 
                 <label class="col form-label">Entre calles:</label>
-                <input class="col form-control" type="text" name="entreCalle" required placeholder="Escribe aqui las entre calles">
+                <input class="col form-control" type="text" name="entreCalle" required placeholder="Escribe aqui las entre calles" pattern="[A-Za-z0-9]{1,45}">
                 
                 <label class="col form-label">Referencias (color y tipo de fachada):</label>
-                <input class="col form-control" type="text" name="referencias" required placeholder="Escribe aqui la referencia de tu domicilio">
+                <input class="col form-control" type="text" name="referencias" required placeholder="Escribe aqui la referencia de tu domicilio" pattern="[A-Za-z0-9]{1,75}">
                 
                 <label class="col form-label">Colonia:</label>
-                <input class="col form-control" type="text" name="colonia" required placeholder="Escribe aqui tu colonia">
+                <input class="col form-control" type="text" name="colonia" required placeholder="Escribe aqui tu colonia"pattern="[A-Za-z0-9]{1,45}">
                 
-                <label class="col form-label">Delegacion:</label>
-                <input class="col form-control" type="text" name="delegacion" required placeholder="Escribe aqui tu delegacion">
-                
-                <label class="col form-label">Ciudad:</label>
-                <input class="col form-control" type="text" name="ciudad" required placeholder="Escribe aqui tu ciudad">
+                <label class="col form-label">Delegacion o Municipio:</label>
+                <input class="col form-control" type="text" name="delegacion" required placeholder="Escribe aqui tu delegacion o Municipio" pattern="[A-Za-z0-9]{1,45}">
                 
                 <label class="col form-label">Estado:</label>
-                <input class="col form-control" type="text" name="estado" required placeholder="Escribe aqui tu estado">
+                <input class="col form-control" type="text" name="estado" required placeholder="Escribe aqui tu estado" pattern="[A-Za-z]{1,45}" title="El estado solo debe tener letras">
                 
-                <label class="col form-label">C.P.:</label>
-                <input class="col form-control" type="number" name="codigoPostal" required placeholder="Escribe aqui tu codigo postal">
+                <label class="col form-label">Codigo Postal:</label>
+                <input class="col form-control" type="tel" name="codigoPostal" required placeholder="Escribe aqui tu codigo postal" pattern="[0-9]{5}" title="El codigo postal debe componerse de 5 numeros ">
                 
                 <label class="col form-label">Telefono de casa:</label>
-                <input class="col form-control" type="tel" name="telefonoCasa" required placeholder="Escribe aqui tu telefono de casa">
+                <input class="col form-control" type="tel" name="telefonoCasa" required placeholder="Escribe aqui tu telefono de casa" pattern="[0-9]{10}" title="El numero de casa debe ser a 10 digitos">
                 
                 <label class="col form-label">Celular:</label>
-                <input class="col form-control" type="tel" name="telefonoCelular" required placeholder="Escribe aqui tu celular">
+                <input class="col form-control" type="tel" name="telefonoCelular" required placeholder="Escribe aqui tu celular" pattern="[0-9]{10}" title="El numero de casa debe ser a 10 digitos">
 
-                <button class="btn btn-primary p-2" type="submit">Enviar datos</button>
+                <button class="btn btn-primary p-3" type="submit">Enviar datos</button>
 
 
             </form>
