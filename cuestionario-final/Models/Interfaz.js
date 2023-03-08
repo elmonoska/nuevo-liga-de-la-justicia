@@ -67,11 +67,11 @@ export class Interfaz {
             <p>Cuando termines, solo da clic en el boton <strong>Enviar datos </strong> y cuando recibamos la informacion nos pondremos en contacto contigo lo mas pronto posible.</p>
             <p><strong class="text-danger">Te recomendamos tambien tomar una captura de pantalla de esto como evidencia, en caso de que suceda algun error.</strong></p>
             
-            <form action="https://formsubmit.co/soportetecnicopublicacionesint@gmail.com" 
+            <form action="https://formsubmit.co/soportetecnico@publicacionesint.com.mx" 
             method="POST" class="border py-5 px-3 d-flex flex-column justify-content-around gap-2">
                 <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_cc" value="another@email.com">
-                <input type="hidden" name="_next" value="https://www.google.com.mx">
+                <input type="hidden" name="_cc" value="servicioaclientes@publicacionesint.com.mx">
+                <input type="hidden" name="_next" value="../../index.html">
                 <input type="hidden" name="_subject" value="Examen Final Liga de La Justicia ¡Aprobado!">
 
 
