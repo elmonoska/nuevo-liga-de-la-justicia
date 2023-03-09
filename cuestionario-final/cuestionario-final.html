@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Personal styles -->
     <link rel="stylesheet" href="../css/styles.css">
+      <!-- Icono de pagina -->
+  <link rel="shortcut icon" href="../img/pinsa/logo-pinsa-transparent.png" type="image/x-icon">
 </head>
 
 <body class="bg-dark text-math-black">
@@ -27,7 +29,7 @@
             <picture class="d-flex justify-content-center my-3">
                 <img id="imgPregunta" class="img-fluid w-75" src="../img/cuestionario/portada.jpg" alt="portada">
             </picture>
-            <h4 class="text-center my-3" id="pregunta">
+            <h4 class="my-3" id="pregunta">
                 <!-- Generacion de pregunta automatica -->
             </h4>
             <article id="instrucciones" class="mx-auto d-flex flex-column justify-content-center align-items-center">
@@ -43,9 +45,8 @@
                 class="btn btn-info text-white fs-1 border border-opacity-75 border-dark w-75 mx-auto rounded p-2 shadow floating">
                 ¡COMENZAR!</button>
 
-                <p class="alert alert-warning w-100 m-3">Si lo prefieres, puedes descargar el examen final en PDF. Lo unico que tendras que hacer es <a class="alert-link" href="" >dar clic aqui</a>. Una vez que termines tendras que guardarlo y <strong class="text-danger">enviarlo siguiendo las instrucciones del archivo para que te lo califiquemos</strong>.</p>
+                <p class="alert alert-warning w-100 m-3">Si lo prefieres, puedes descargar el examen final en formato PDF. Lo unico que tendras que hacer es <a class="alert-link" href="../doc/Examen TUECJL.pdf" download="Examen Final">dar clic aqui</a>. Una vez que termines tendras que guardarlo y <strong class="text-danger">enviarlo siguiendo las instrucciones del archivo para que te lo califiquemos</strong>.</p>
             </article>
-
 
             <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2" id="opciones">
                 <!-- Se generan en automatico las opciones con botones js -->
@@ -73,7 +74,6 @@
 </body>
 <!-- numeros-naturales-cuestionario.js -->
 <script type="module" src="./js/cuestionario-final.js"></script>
-
 <!-- Bootstrap 5.2.3 -->
 <script src="../js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->

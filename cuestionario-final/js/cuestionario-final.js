@@ -15,9 +15,7 @@ const nuevasPreguntas = preguntasDesordenadas.map(pregunta => {
  */
 function recargarPagina(cuestionario, interfaz) {
     if (cuestionario.haFinalizado()) {
-        //interfaz.muestraCalificacion(cuestionario.calificacion)correcot
-        //interfaz.muestraCalificacion(cuestionario.preguntas.length)
-        interfaz.muestraCalificacion((cuestionario.calificacion/cuestionario.preguntas.length)*100)
+        interfaz.muestraCalificacion(Number((cuestionario.calificacion/cuestionario.preguntas.length)*100).toFixed(1))
 
     } else {
         interfaz.muestraPregunta(cuestionario.obtenerPreguntaActual().pregunta);
