@@ -31,7 +31,7 @@ export class Interfaz {
             {
                 const button = document.createElement('button');
                 button.textContent = opciones[i]
-                button.className = 'btn btn-light p-4 w-75 border border-dark border-opacity-75 shadow my-2 text-lowercase'
+                button.className = 'btn btn-danger bg-gradient p-4 w-75 border border-dark border-opacity-75 shadow-sm my-2 text-lowercase'
                 button.addEventListener('click', () => callback(opciones[i]))
 
                 contenedorOpciones.appendChild(button)
@@ -46,20 +46,20 @@ export class Interfaz {
     muestraCalificacion(calificacion){
         if(calificacion < 80){
             const cuestionarioFinalizadoHTML = `
-            <h1 class="text-center display-1">Has finalizado el cuestionario.</h1>
+            <h2 class="text-center display-1">Has finalizado el cuestionario.</h2>
             <hr>
             <p class="text-center display-1 text-danger"><strong>¡Mala suerte! ☹️</strong></p>
             
             <h2 class="text-center">Tu calificacion final es de: <strong class="text-danger  display-3">${calificacion}%</strong></h2>
             <p class="text-center">Al parecer aun no cumples con la calificacion minima. No te desanimes, tomate unos minutos y vuelve a intentarlo. <strong>Puedes intentarlo las veces que necesites</strong>.</p>
             <a href="javascript:location.reload()"
-              class="btn btn-primary text-white text-uppercase fs-3 p-3 mb-2 w-75 mx-auto">volver a intentar</a>
+              class="btn btn-primary bg-gradient text-white text-uppercase fs-3 p-3 mb-2 w-75 mx-auto">volver a intentar</a>
             `
             const cuestionario = document.querySelector('#cuestionario')
             cuestionario.innerHTML = cuestionarioFinalizadoHTML
         }else{
             const cuestionarioFinalizadoHTML = `
-            <h1 class="text-center display-1">Has finalizado el cuestionario.</h1>
+            <h2 class="text-center display-1">Has finalizado el cuestionario.</h2>
             <hr>
             <p class="text-center display-1  text-success"><strong>¡Felicidades! 🥳</strong></p>
             <h2 class="text-center">Tu calificacion final es de: <strong class="text-success display-3">${calificacion}%</strong></h2>
@@ -129,7 +129,7 @@ export class Interfaz {
                 <label class="form-label">Celular:</label>
                 <input class="form-control" type="tel" name="telefonoCelular" required placeholder="Escribe aqui tu celular" pattern="[0-9]{10}" title="El numero de casa debe ser a 10 digitos">
                 <hr>
-                <button class="btn btn-primary p-3" type="submit">Enviar datos</button>
+                <button class="btn btn-primary bg-gradient p-3" type="submit">Enviar datos</button>
                 <hr>
                 <p class="alert alert-info">Cuando des clic en <strong>Enviar datos</strong> te aparecera un Captcha que tendras que resolver, solo por cuestiones de seguridad. Y esto seria todo.</p>
                 <video src="../img/cuestionario/gif-catpcha.webm" autoplay loop></video>
