@@ -38,6 +38,12 @@
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="https://sites.google.com/view/ultimate-english-course-videos/p%C3%A1gina-principal">Season One (Videos)</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="http://www.ediciones.mx/theultimateenglishcourse/view/app/web/view/startup/splashscreen.html">Challenges (Juegos)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="/poster/plan-de-estudios.html">Plan de estudios (Poster)</a>
+            </li>
         </div>
       </div>
     </nav>
@@ -194,23 +200,9 @@
   </footer>
   <!-- Fin de pie de pagina -->
 </body>
-<script>
-  //Alternate audio
-  const missionSelect = document.querySelector("#missionSelect")
-  const pistaSelect = document.querySelector("#pistaSelect")
-  const audioTitle = document.querySelector("#audioTitle")
-  const pistaListen = document.querySelector("#pistaListen")
 
-  //function que cambia el track mientras se modifique algun select que se desea ver
-  function change() {
-    //Obtiene el valor de la cd seleccionado
-    const selectedOptionMission = missionSelect.options[missionSelect.selectedIndex];
-    //Obtiene el valor del track seleccionado
-    const selectedOptionAudio = pistaSelect.options[pistaSelect.selectedIndex];
-    pistaListen.setAttribute('src', `multi/CDS/MISSION (AUDIO)/${selectedOptionMission.value}/${selectedOptionAudio.value}`)
-    audioTitle.textContent = `Estas escuchando el ${selectedOptionMission.value} - ${selectedOptionAudio.text}`
-  }
-</script>
+<script src="./js/page_audios.js"></script>
+
 <!-- Bootstrap 5.2.3 -->
 <script src="./js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->

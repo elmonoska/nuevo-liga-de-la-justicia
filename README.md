@@ -17,5 +17,5 @@ Cualquier comentario sobre derechos de autor o acuerdos de uso, tratarlo con [Pu
 * ccruz@publicacionesint.com.mx
 
 ### Créditos adicionales
-Vectores [SVG Repo](https://www.svgrepo.com/)
-Hoja de estilos [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+* Vectores [SVG Repo](https://www.svgrepo.com/)
+* Hoja de estilos [Bootstrap 5.2.3](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
