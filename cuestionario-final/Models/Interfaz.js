@@ -68,7 +68,7 @@ export class Interfaz {
             <p><strong class="text-danger">Te recomendamos tambien tomar una captura de pantalla de esto como evidencia, en caso de que suceda algun error.</strong></p>
             
             
-            <form action="https://formsubmit.co/soportetecnico@publicacionesint.com.mx" 
+            <form action="https://formsubmit.co/130a25e7638d884cfb6ef6ef7a801cbf" 
             method="POST" class="border py-5 px-3 d-flex flex-column justify-content-around gap-2">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_cc" value="servicioaclientes@publicacionesint.com.mx">
