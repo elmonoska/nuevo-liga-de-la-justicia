@@ -105,7 +105,7 @@ export const examenFinal = [
    // Preguntas del tema 2
    // -------------------------------------------------------------------
    
-  /* {
+  {
     pregunta: `${tema2} Wonder Woman _ a doctor, she _ a Super Hero.`,
     opciones: [`is not, are`, `is not, is`, `are not, are`, `are not, is`],
     respuesta: `is not, is`,
@@ -1111,6 +1111,6 @@ export const examenFinal = [
     opciones: [`will spent`, `will spend`],
     respuesta: `will spend`,
     img: `${imgTema20}`,
-  }, */
+  },
   
 ];
