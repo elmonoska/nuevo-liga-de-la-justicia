@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | Nueva Liga De La Justicia | Publicaciones Interactivas</title>
+  <title>Plan de estudios | Nueva Liga De La Justicia | Publicaciones Interactivas</title>
   <!-- Css de bootstrap 5.2.3-->
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
   <!-- Css personalizado -->
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <!-- Icono de pagina -->
-  <link rel="shortcut icon" href="../img/pinsa/logo-pinsa-transparent.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/img/Pinsa/logo-pinsa-transparent.png" type="image/x-icon">
 </head>
 
 <body>
+
   <header>
-    <!-- Barra de navegacion -->
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
-      <div class="container-fluid">
+      <section class="container-fluid">
         <a class="navbar-brand text-white" href="./index.html">
-          <img src="../img/ligaDeLaJusticia/logo.png" alt="Logo liga de la justicia" width="100" height="50"
+          <img src="./assets/img/JLU/logo.png" alt="Logo liga de la justicia" width="100" height="50"
             class="d-inline-block">
           LIGA DE LA JUSTICIA
         </a>
@@ -29,36 +30,36 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-lg-0 text-center">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link text-white" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../audios.html">Mission (Audios)</a>
+              <a class="nav-link text-white" aria-current="page" href="./audios.html">Mission (Audios)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page"
-                href="https://sites.google.com/view/ultimate-english-course-videos/p%C3%A1gina-principal">Season One
-                (Videos)</a>
+              <a class="nav-link text-white" aria-current="page" href="https://sites.google.com/view/ultimate-english-course-videos/p%C3%A1gina-principal">Season One (Videos)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page"
-                href="http://www.ediciones.mx/theultimateenglishcourse/view/app/web/view/startup/splashscreen.html">Challenges
-                (Juegos)</a>
+              <a class="nav-link text-white" aria-current="page" href="http://www.ediciones.mx/theultimateenglishcourse/view/app/web/view/startup/splashscreen.html">Challenges (Juegos)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" aria-current="page" href="./plan-de-estudios.html">Plan de estudios
-                (Poster)</a>
+              <a class="nav-link text-danger" aria-current="page" href="./plan-de-estudios.html">Plan de estudios (Poster)</a>
             </li>
-        </div>
-      </div>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./cuestionario-final.html">Cuestionario final</a>
+            </li>
+        </section>
+      </section>
     </nav>
-    <!-- Fin de barra de navegacion -->
+    <!-- Fin de barra de navegación -->
+
     <!-- Banner -->
     <section class="banner p-0 container-fluid mb-2 d-flex flex-column align-items-center justify-content-center">
-      <img class="w-100 mt-5" src="../img/ligaDeLaJusticia/banner.jpg" alt="Banner liga de la justicia">
-      <img class="img-fluid" src="../img/ligaDeLaJusticia/nameLogo.png" alt="Logo banner liga de la justicia">
+      <img class="w-100 mt-5" src="./assets/img/JLU/banner.jpg" alt="Banner liga de la justicia">
+      <img class="img-fluid" src="./assets/img/JLU/nameLogo.png" alt="Logo banner liga de la justicia">
     </section>
     <!-- Fin de banner -->
   </header>
@@ -81,13 +82,13 @@
       
       <hr>
 
-      <!-- Seccion de calendario -->
-      <!-- Seleccion de video -->
+      <!-- Sección de calendario -->
+      <!-- Selección de video -->
       <article class="text-center">
         <p class="fs-5">
           <strong>Elige el mes que deseas consultar.</strong>
         </p>
-        <select onchange="change()" name="monthSelect" id="monthSelect" class="form-select mx-auto my-3 p-3 shadow"
+        <select name="monthSelect" id="monthSelect" class="form-select mx-auto my-3 p-3 shadow"
           aria-label="Default select example">
           <option disabled selected>Seleccione el mes</option>
           <option value="mes_1">Mes 1</option>
@@ -104,41 +105,41 @@
           <option value="mes_12">Mes 12</option>
         </select>
 
-        <h3 id="monthTitle"></h3>
-
         <figure>
-          <a href="./img/calendario_mes 1.png" id="monthView" target="_blank">
-            <img src="./img/calendario_mes 1.png" alt="Imagen de mes" id="monthImage" class="img-fluid">
+          <a href="./assets/img/Poster/calendario_mes 1.png" id="monthView" target="_blank">
+            <img src="./assets/img/Poster/calendario_mes 1.png" alt="Imagen de mes" id="monthImage" class="img-fluid">
           </a>
         </figure>
 
       </article>
     </article>
-    <!-- Fin de seleccion de video -->
+    <!-- Fin de selección de video -->
 
-    <!-- Fin de Seccion de calendario -->
+    <!-- Fin de Sección de calendario -->
 
 
-    <!-- Fin de Seccion contenido multimedia -->
+    <!-- Fin de Sección contenido multimedia -->
     </article>
     <!-- Fin de Contenido principal -->
   </section>
   <!-- Fin de contenedor principal -->
+
   <!-- Pie de pagina -->
-  <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
+  <footer class="footer bg-pinsa-primary d-flex justify-content-around align-items-center p-2 flex-column gap-3">
     <picture class="text-center">
-      <img class="img-fluid shadow w-50" src="../img/pinsa/logo-pinsa-transparent.png" alt="Logo pinsa transparente">
+      <img class="img-fluid shadow w-50" src="./assets/img/Pinsa/logo-pinsa-transparent.png" alt="Logo PINSA transparente">
     </picture>
+    <p class="text-white">Sitio desarrollado por <a class="link-danger" href="https://github.com/elmonoska">ElMonoSka</a></p>
   </footer>
   <!-- Fin de pie de pagina -->
 </body>
 
+<!-- Script months -->
+<script src="./assets/js/page_month.js"></script>
 <!-- Bootstrap 5.2.3 -->
-<script src="../js/bootstrap.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-
-<script src="../js/page_month.js"></script>
 
 </html>

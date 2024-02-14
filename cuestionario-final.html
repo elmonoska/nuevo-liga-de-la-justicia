@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Nueva Liga De La Justicia | Publicaciones Interactivas</title>
+  <!-- Css de bootstrap 5.2.3-->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <!-- Css personalizado -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- Icono de pagina -->
+  <link rel="shortcut icon" href="./assets/img/Pinsa/logo-pinsa-transparent.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-dark bg-gradient fixed-top">
+      <section class="container-fluid">
+        <a class="navbar-brand text-white" href="./index.html">
+          <img src="./assets/img/JLU/logo.png" alt="Logo liga de la justicia" width="100" height="50"
+            class="d-inline-block">
+          LIGA DE LA JUSTICIA
+        </a>
+        <button class="navbar-toggler bg-danger bg-gradient bg-opacity-75" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./audios.html">Mission (Audios)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="https://sites.google.com/view/ultimate-english-course-videos/p%C3%A1gina-principal">Season One (Videos)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="http://www.ediciones.mx/theultimateenglishcourse/view/app/web/view/startup/splashscreen.html">Challenges (Juegos)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="./plan-de-estudios.html">Plan de estudios (Poster)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-danger" aria-current="page" href="./cuestionario-final.html">Cuestionario final</a>
+            </li>
+        </section>
+      </section>
+    </nav>
+    <!-- Fin de barra de navegación -->
+
+  </header>
+
+    <!-- Contenido principal -->
+    <main class="container my-5 pt-5">
+        <!-- Cuestionario -->
+        <section class="container-fluid bg-white border rounded d-flex flex-column py-5 px-4" id="cuestionario">
+            <h1 class="text-center text-capitalize display-6">cuestionario final de liga de la justicia.</h1>
+            <hr>
+            <picture class="d-flex justify-content-center my-3">
+                <img id="imgPregunta" class="img-fluid w-50" src="./assets/img/Cuestionario/portada.jpg" alt="portada">
+            </picture>
+            <h4 class="my-3" id="pregunta">
+                <!-- Generación de pregunta automática -->
+            </h4>
+            <article id="instrucciones" class="mx-auto d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="display-3 text-success"><strong>¡Felicidades!</strong></p>
+                <p>Ahora que ya sabes inglés, falta un último paso para que obtengas tu preciado <strong class="text-danger">diploma con valor curricular</strong>.</p>
+                <p>Solo tienes que realizar el examen final, seleccionando la respuestas correctas. </p>
+                <p><strong>Si contestas correctamente al menos el 80%  de las preguntas</strong>, se te mostrara un formulario para que lo llenes con tus datos y te hagamos llegar tu diploma hasta la puerta de tu hogar.</p>
+                <p class=" text-primary display-5"><strong>¡Buena suerte! 🙂</strong></p>
+
+                
+                <button id="empezar" 
+                class="btn btn-primary bg-gradient text-white fs-1 border border-opacity-75 border-dark w-75 mx-auto rounded p-2 shadow">
+                ¡Comenzar!</button>
+
+                <p class="alert alert-warning w-100 m-3">Si lo prefieres, puedes descargar el examen final en formato PDF. Lo único que tendrás que hacer es <a class="alert-link" href="./assets/docs/Examen TUECJL.pdf" download="Examen Final">dar clic aquí</a>. Una vez que termines tendrás que guardarlo y <strong class="text-danger">enviarlo siguiendo las instrucciones del archivo para que te lo califiquemos</strong>.</p>
+            </article>
+
+            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2" id="opciones">
+                <!-- Se generan en automático las opciones con botones js -->
+            </article>
+            
+            <hr>
+            <p class="text-center text-dark fs-5" id="progreso">
+
+            </p>
+
+        </section>
+        <!-- Fin de  Cuestionario -->
+
+    </main>
+    <!-- Fin de contenido principal -->
+
+      <!-- Pie de pagina -->
+  <footer class="footer bg-pinsa-primary d-flex justify-content-around align-items-center p-2 flex-column gap-3">
+    <picture class="text-center">
+      <img class="img-fluid shadow w-50" src="./assets/img/Pinsa/logo-pinsa-transparent.png" alt="Logo PINSA transparente">
+    </picture>
+    <p class="text-white">Sitio desarrollado por <a class="link-danger" href="https://github.com/elmonoska">ElMonoSka</a></p>
+  </footer>
+  <!-- Fin de pie de pagina -->
+</body>
+
+<!-- Script cuestionario final -->
+<script type="module" src="./assets/js/Cuestionario-final/script.js"></script>
+<!-- Bootstrap 5.2.3 -->
+<script src="./assets/js/bootstrap.js"></script>
+<!-- Popper js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+</html>
+
+</html>

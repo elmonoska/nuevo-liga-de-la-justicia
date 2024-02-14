@@ -1,7 +1,7 @@
-import { Cuestionario } from "../Models/Cuestionario.js";
-import { Interfaz } from "../Models/Interfaz.js";
-import { Pregunta } from "../Models/Pregunta.js";
-import { examenFinal } from "../preguntas.js";
+import { Cuestionario } from "./Models/Cuestionario.js";
+import { Interfaz } from "./Models/Interfaz.js";
+import { Pregunta } from "./Models/Pregunta.js";
+import { examenFinal } from "./preguntas.js";
 
 const preguntasDesordenadas = examenFinal.sort(() => Math.random()-0.5)
 const nuevasPreguntas = preguntasDesordenadas.map(pregunta => {
