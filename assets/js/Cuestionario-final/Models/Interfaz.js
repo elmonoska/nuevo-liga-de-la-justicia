@@ -72,7 +72,7 @@ export class Interfaz {
             method="POST" class="border py-5 px-3 d-flex flex-column justify-content-around gap-2">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_cc" value="pmarin@timeuniversity.com.mx">
-                <input type="hidden" name="_next" value="https://www.ediciones.mx/theultimateenglishcourse">
+                <input type="hidden" name="_next" value="https://elmonoska.github.io/nuevo-liga-de-la-justicia/cuestionario-finalizado.html">
                 <input type="hidden" name="_subject" value="Examen Final Liga de La Justicia ¡Aprobado! Calificación: ${calificacion}">
 
 
