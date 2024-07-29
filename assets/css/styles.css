@@ -33,3 +33,15 @@
 .text-pinsa-primary {
     color: var(--pinsa-primary--color)
 }
+
+input {
+    &:focus, &:focus:placeholder-shown {
+        border: thin solid #ced4da !important;
+    }
+    &:focus:invalid {
+        border: medium solid red !important;
+    }
+    &:valid {
+        border: thin solid rgb(25, 135, 84)
+    }
+}

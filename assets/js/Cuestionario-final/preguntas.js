@@ -64,7 +64,7 @@ export const examenFinal = [
     respuesta: `am, an`,
     img: `${imgTema1}`,
   },
-  {
+/*   {
     pregunta: `${tema1} She _ _ Super Hero fan.`,
     opciones: [`am, a`, `am, an`, `is, a`, `is, an`],
     respuesta: `is, a`,
@@ -282,7 +282,7 @@ export const examenFinal = [
   {
     pregunta: `${tema6} Are _ books for me?`,
     opciones: [`this`, `these`],
-    respuesta: `this`,
+    respuesta: `these`,
     img: `${imgTema6}`,
   },
   {
@@ -796,14 +796,14 @@ export const examenFinal = [
   },
   {
     pregunta: `${tema18} SELECT AFFIRMATIVE They _ painting my house in the morning.`,
-    opciones: [`was`, `were`],
-    respuesta: `were`,
+    opciones: [`They was`, `They were`],
+    respuesta: `They were`,
     img: `${imgTema18}`,
   },
   {
-    pregunta: `${tema18} SELECT NEGATIVE They _ painting my house in the morning.`,
-    opciones: [`wasn't`, `weren't`],
-    respuesta: `weren't`,
+    pregunta: `${tema18} SELECT NEGATIVE _ _ painting my house in the morning.`,
+    opciones: [`They wasn't`, `They weren't`],
+    respuesta: `They weren't`,
     img: `${imgTema18}`,
   },
   {
@@ -1111,6 +1111,6 @@ export const examenFinal = [
     opciones: [`will spent`, `will spend`],
     respuesta: `will spend`,
     img: `${imgTema20}`,
-  },
+  }, */
   
 ];
