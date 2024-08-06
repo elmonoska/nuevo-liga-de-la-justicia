@@ -64,7 +64,7 @@ export const examenFinal = [
     respuesta: `am, an`,
     img: `${imgTema1}`,
   },
-/*   {
+  {
     pregunta: `${tema1} She _ _ Super Hero fan.`,
     opciones: [`am, a`, `am, an`, `is, a`, `is, an`],
     respuesta: `is, a`,
@@ -1111,6 +1111,6 @@ export const examenFinal = [
     opciones: [`will spent`, `will spend`],
     respuesta: `will spend`,
     img: `${imgTema20}`,
-  }, */
+  },
   
 ];
