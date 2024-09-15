@@ -45,3 +45,37 @@ input {
         border: thin solid rgb(25, 135, 84)
     }
 }
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+.container-ch-100 {
+    width: clamp(300px, 100ch, 90%);
+    height: auto;
+    margin-inline: auto;
+}
+.container-ch-800 {
+    width: clamp(300px, 100ch, 90%);
+    height: auto;
+    margin-inline: auto;
+}
+
+
+.hero-image {
+    height: 50dvh;
+    background-image: url("../img/JLU/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    background-attachment: fixed;
+}
+
+#imgPregunta {
+    width: clamp(300px, 40ch, 50%);
+}

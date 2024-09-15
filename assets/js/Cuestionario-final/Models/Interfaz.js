@@ -31,7 +31,7 @@ export class Interfaz {
             {
                 const button = document.createElement('button');
                 button.textContent = opciones[i]
-                button.className = 'btn btn-danger bg-gradient p-4 w-75 border border-dark border-opacity-75 shadow-sm my-2 text-lowercase'
+                button.className = 'btn btn-danger bg-gradient p-3 w-75 border border-dark border-opacity-75 shadow-sm my-2 text-lowercase'
                 button.addEventListener('click', () => callback(opciones[i]))
 
                 contenedorOpciones.appendChild(button)
