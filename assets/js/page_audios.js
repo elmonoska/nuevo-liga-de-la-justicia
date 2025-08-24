@@ -47,8 +47,6 @@ trackSelect.addEventListener('change', (e) => {
   const trackSelectedText = trackSelect.options[trackSelectedIndex].text;
   
   trackTitle.textContent = `Estás escuchando: ${missionSelectedText} - ${trackSelectedText}`;
-
-  console.log(trackSelectedIndex)
-  console.log(`../media/Missions/${missionSelect.value}/${trackSelectedIndex} ${trackSelectedText}.mp3`)
-  trackListen.src = `/assets/media/Missions/${missionSelect.value}/${trackSelectedIndex} ${trackSelectedText}.mp3`
+  
+  trackListen.src = `./assets/media/Missions/${missionSelect.value}/${trackSelectedIndex} ${trackSelectedText}.mp3`
 });
