@@ -2,6 +2,8 @@
 :root{
     /* Colores pinsa */
     --pinsa-primary--color: #7648E0;
+    /* Colores time university */
+    --time-primary-color: #2d2c38;
 
 }
 /******************** ESTILOS GENERALES ********************/
@@ -24,6 +26,7 @@
 .svg-size-s{
     width: 1.5em;
 }
+
 /******************** ESTILOS DE PINSA ********************/
 /* Colores de fondo */
 .bg-pinsa-primary {
@@ -79,3 +82,10 @@ main {
 #imgPregunta {
     width: clamp(300px, 40ch, 50%);
 }
+
+
+/* Estilos de time university */
+.bg-time-primary {
+    background-color: var(--time-primary-color);
+}
+
